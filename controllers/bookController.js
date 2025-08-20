@@ -199,10 +199,10 @@ const session = await stripe.checkout.sessions.create({
   mode: 'payment',
   //if payment is successful then redirected to payment success
 
-   success_url: 'http://localhost:5173/paymentsuccess',
+   success_url: 'https://bookstore-frontend-pearl-gamma.vercel.app/paymentsuccess',
   
    //if payment is unsuccessful then redirected to payment error
- cancel_url :'http://localhost:5173/paymenterror'
+ cancel_url :'https://bookstore-frontend-pearl-gamma.vercel.app/paymenterror'
 
 });
 console.log(session);
